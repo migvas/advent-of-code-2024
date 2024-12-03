@@ -1,3 +1,4 @@
+# Number of bad levels allowed
 MAX_BAD_LEVELS = 1
 
 def is_safe(arr, p1, p2, bad_levels, order):
@@ -30,7 +31,7 @@ def is_safe(arr, p1, p2, bad_levels, order):
         return False
     
     if p2 >= len(arr):
-        return p1 == len(arr) - 1 or bad_levels < 2   
+        return p1 == len(arr) - 1 or bad_levels <= MAX_BAD_LEVELS   
     
     difference = int(arr[p2]) - int(arr[p1])
 
