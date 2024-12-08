@@ -7,17 +7,17 @@ def is_safe(arr):
     2. The sequence is either consistently increasing or decreasing.
 
     Args:
-        arr (list[int]): A list of integers to evaluate.
+        arr (list[str]): A list of numbers in the form of strings to evaluate.
 
     Returns:
         bool: True if the sequence is safe, False otherwise.
 
     Examples:
-        >>> is_safe([1, 3, 4])
+        >>> is_safe(["1", "3", "4"])
         True
-        >>> is_safe([4, 1, 1])
+        >>> is_safe(["4", "1", "1"])
         False
-        >>> is_safe([5])
+        >>> is_safe(["5"])
         True
     """
     if len(arr) == 1:

@@ -6,7 +6,7 @@ POSSIBLE_OPERATIONS_2 = ["+", "*", "||"]
 # Part 1 and 2
 def is_valid(arr, total, curr_val, pos, operator, possible_operations):
     """
-    Determines if applying the possible operations to the array makes it equal to 
+    Determines if applying the possible operations to the array makes it equal to
     the total value.
 
     Args:
